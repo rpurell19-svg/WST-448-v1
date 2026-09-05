@@ -68,9 +68,22 @@ export function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-4 border-t border-charcoal-800 pt-8 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-concrete-400">
-            © {new Date().getFullYear()} {site.name}. All Rights Reserved.
-          </p>
+          <div className="flex flex-col gap-2 text-sm text-concrete-400">
+            <p>
+              © {new Date().getFullYear()} {site.name}. All Rights Reserved.
+            </p>
+            <p>
+              Created by{" "}
+              <a
+                href="https://rocco-creations.base44.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-bronze-500 transition-colors duration-300 hover:text-bronze-400"
+              >
+                Rocco Creations
+              </a>
+            </p>
+          </div>
           <p className="type-eyebrow text-concrete-400">
             Property Developers &amp; Home Builders · Gauteng
           </p>
