@@ -40,7 +40,7 @@ export default function DevelopersPortal() {
   useEffect(() => {
     const auth = localStorage.getItem("dev-portal-auth");
     if (!auth) {
-      router.push("/developers");
+      router.push("/dev");
       return;
     }
     setAuthorized(true);
@@ -48,7 +48,7 @@ export default function DevelopersPortal() {
 
   const handleLogout = () => {
     localStorage.removeItem("dev-portal-auth");
-    router.push("/developers");
+    router.push("/dev");
   };
 
   const handleColorChange = (index: number, newValue: string) => {

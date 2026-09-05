@@ -13,7 +13,7 @@ export default function DevelopersLogin() {
     e.preventDefault();
     if (passcode === "20120626") {
       localStorage.setItem("dev-portal-auth", "true");
-      router.push("/developers/portal");
+      router.push("/dev/portal");
     } else {
       setError("Invalid passcode");
       setPasscode("");
